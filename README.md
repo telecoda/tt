@@ -3,6 +3,10 @@ timetool
 
 Simple command line tool for converting a time to a variety of formats.
 
+##Installation
+
+    go get github.com/telecoda/tt
+
 ##Parameters
     Usage of ./tt:
 
