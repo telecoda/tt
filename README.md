@@ -16,7 +16,7 @@ Simple command line tool for converting a time to a variety of formats.
     nanosecond or millisecond unix timestamp. The tool makes some 
     assumptions about the time being relatively recent. It uses the number of 
     digits to decide which format your timestamp is in.  Try not to use times 
-    prior to 1973-03-03 09:46:40 +0000 UTC and expect the nanosecond or 
+    prior to 2001-09-09T02:46:40+01:00 UTC and expect the nanosecond or 
     millisecond time to work. You can also provide a string field as long as 
     the string is in format RFC3339.
     If no time provided, defaults to current time
