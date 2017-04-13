@@ -43,10 +43,12 @@ func main() {
 	fmt.Printf("Format      :                     Value\n")
 	fmt.Printf("=======================================\n")
 	fmt.Printf("Nano        : %25d\n", timestamp.UnixNano())
-	fmt.Printf("Unix        : %25d\n", timestamp.Unix())
+	fmt.Printf("Micro       : %25d\n", timestamp.UnixNano()/1000)
+	fmt.Printf("Milli       : %25d\n", timestamp.UnixNano()/1000000)
+	fmt.Printf("Unix secs   : %25d\n", timestamp.Unix())
 	fmt.Printf("RFC3339     : %s\n", timestamp.Format(time.RFC3339))
 	fmt.Printf("RFC3339Nano : %s\n", timestamp.Format(time.RFC3339Nano))
-
+	fmt.Printf("Code        : time.Date(%d, %d, %d, %d, %d, %d, %d, time.UTC)\n", timestamp.Year(), timestamp.Month(), timestamp.Day(), timestamp.Hour(), timestamp.Minute(), timestamp.Second(), timestamp.Nanosecond())
 }
 
 func parseTime(tString string) {
