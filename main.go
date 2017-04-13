@@ -63,7 +63,6 @@ func parseTime(tString string) {
 
 		for ii := numDigits; ii < 19; ii++ {
 			tInt = tInt * 10
-			fmt.Printf("%v\n", tInt)
 		}
 		nanoTime = int64(tInt)
 
