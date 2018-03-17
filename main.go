@@ -14,10 +14,10 @@ var textTime string
 
 func getTime() (time.Time, error) {
 	if nanoTime != 0 {
-		return time.Unix(0, nanoTime), nil
+		return time.Unix(0, nanoTime).UTC(), nil
 	}
 	if unixTime != 0 {
-		return time.Unix(unixTime, 0), nil
+		return time.Unix(unixTime, 0).UTC(), nil
 	}
 	if textTime != "" {
 		// lets Try and parse this string..
