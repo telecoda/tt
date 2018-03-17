@@ -48,6 +48,7 @@ func main() {
 	fmt.Printf("Unix secs   : %25d\n", timestamp.Unix())
 	fmt.Printf("RFC3339     : %s\n", timestamp.Format(time.RFC3339))
 	fmt.Printf("RFC3339Nano : %s\n", timestamp.Format(time.RFC3339Nano))
+	fmt.Printf("Local       : %s\n", timestamp.Local())
 	fmt.Printf("Code        : time.Date(%d, %d, %d, %d, %d, %d, %d, time.UTC)\n", timestamp.Year(), timestamp.Month(), timestamp.Day(), timestamp.Hour(), timestamp.Minute(), timestamp.Second(), timestamp.Nanosecond())
 }
 
